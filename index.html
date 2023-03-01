@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Attendance Record</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<py-script>
+	
+</py-script>
+<body>
+	
+	<div class="container">
+		<h1>Fiche De Presence</h1> <br>
+		<div class="form-group">
+			<label for="restaurant">Restaurant:</label>
+			<input type="text" list="shop" id="restaurant" name="restaurant">
+			<datalist id="shop">
+				<option value="Tasty"></option>
+				<option value="Restaurant Shalimar"></option>
+			</datalist>
+		</div>
+		<div class="form-group">
+			<label for="worker">Worker Full Name:</label>
+			<input type="text" id="worker" name="worker">
+		</div>
+		<div class="form-group">
+			<label for="month">Month-Year:</label>
+			<input type="month" id="month" name="month">
+		</div>
+		<button type="button" onclick="createTable()">Show</button>
+		<button id="select" onclick="selectCells()">Select</button>
+		<div id="table-container"></div><br>
+		<button id="done" onclick="generateReport()">Done</button>
+		
+	</div>
+	<script>
+		function selectCells() {
+		  
+		  if (value != null) {
+			var selectedCells = document.querySelectorAll(".selected");
+			for (var i = 0; i < selectedCells.length; i++) {
+			  selectedCells[i].textContent = value;
+			}
+		  }
+		}
+		</script>
+
+	<script src="script.js" defer></script>
+</body>
+
+</html>
