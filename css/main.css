@@ -538,7 +538,7 @@ header.sticky .navbar-brand img {
 }
 
 .about-text .p {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 300;
     line-height: 40px;
     margin: 50px 0px;
@@ -763,7 +763,7 @@ header.sticky .navbar-brand img {
     font-weight: 700;
     background-color: #ffffff;
     color: #9c6830;
-    padding: 7px;
+    padding: 12px;
     display: flex;
     justify-content: center;
     width: 200px;
